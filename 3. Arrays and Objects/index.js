@@ -15,6 +15,9 @@ let numbers = [
 // Todo 3.1 Get the first, 5th, and last items in the numbers array.
 // Your code here
 
+let number = numbers[0, 4, 14];
+console.log(number);
+console.log("HEllow world");
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Your code here
 

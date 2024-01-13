@@ -8,15 +8,36 @@ const randomNumber = Math.floor((Math.random() * 100) + 1); // feel free to mock
 // TODO 2.1 Display "more than fifty" if randomNumber is more than fify
 // Your code here
 
+if (randomNumber > 50) {
+    console.log('more than fifty')
+}
+console.log(randomNumber)
+
 // TODO 2.2 Display whether the random number is odd or even
 // Your code here
 
-// TODO 2.3 If the number if a multiple of 3, write "fizz".
+if (randomNumber % 2 == 0) { 
+    console.log("even brew")
+}
+else {
+    console.log("Odd")
+}
+
+
+// TODO 2.3 If the number is a multiple of 3, write "fizz".
 // if the number is a multiple of 5 display "buzz".
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 // Your code here
 
-let toDisplay = ""
+let toDisplay = randomNumber
+
+if (toDisplay % 3 == 0) {
+    console.log("fizz")
+}
+if (toDisplay % 5 ==0){
+    console.log("buzz")
+}
+if ()
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
 // Your code here
 console.log("toDisplay", toDisplay);
