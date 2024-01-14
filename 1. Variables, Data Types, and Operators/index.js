@@ -107,5 +107,8 @@ console.log(resultOne, resultTwo, resultThree, resultFour, resultFive, resultSix
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
 // Answer: 
 
+// It evaluate to true. Based on my research, In JavaScript, when you compare false and an empty box ([]), the computer tries to make them similar to see if they are equal. 
+// The empty box turns into an empty string, and then both the empty box and false become the number zero. 
+// So, 0 is the same as 0, and the comparison ends up being true.
 
 // Your code here
