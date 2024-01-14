@@ -16,7 +16,7 @@ console.log(randomNumber)
 // TODO 2.2 Display whether the random number is odd or even
 // Your code here
 
-if (randomNumber % 2 == 0) { 
+if (randomNumber % 2 === 0) { 
     console.log("even brew")
 }
 else {
@@ -29,18 +29,24 @@ else {
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 // Your code here
 
-let toDisplay = randomNumber
-
-if (toDisplay % 3 == 0) {
+if (randomNumber % 3 === 0) {
     console.log("fizz")
 }
-if (toDisplay % 5 ==0){
+if (randomNumber % 5 === 0){
     console.log("buzz")
 }
 
+if (randomNumber % 5 === 0 && randomNumber % 3 === 0) {
+    console.log("fizzbuzz")
+}
+let toDisplay = randomNumber
+
+
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
 // Your code here
-console.log("toDisplay", toDisplay);
+
+toDisplay = randomNumber ? "Even" : "Odd"
+console.log("toDisplay", toDisplay)
 
 // Checkpoint 2.1 How do you use switch statements and when would you use them? Try researching the answer
 // Answer: 
@@ -49,9 +55,21 @@ console.log("toDisplay", toDisplay);
 const n = 10
 // Your code here
 
+for (let i = 0; i < n; i++) {
+    
+    console.log(i + 1)
+}
+
 const list = ["apple", "banana", "cherry", "date", "elderberry"];
 // TODO 2.6 Use a while loop to display all the values in the list
 // Your code here
+
+let index = 0
+
+while (index < list.length) {
+    console.log(list[index])
+    index++
+}
 
 // Checkpoint 2.3 What is the difference between do while and while loop?
 // Answer: 
