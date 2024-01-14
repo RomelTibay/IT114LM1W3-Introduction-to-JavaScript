@@ -22,13 +22,17 @@ console.log(mySpeech)
 // TODO 1.3 Use the const keyword to define a variable. Try reassigning the value of the variable. What happens?
 // Your code here
 
-//const con = 1.1
-//con = 50
-//console.log(con)
+const myConstant = 5;
+//myConstant = 10;
+console.log("myConstant value is " + myConstant);
 
 
 // Checkpoint 1.1 What is the difference between var, let, and const?
-// Answer: A const variable cannot be reassigned, variables defined with 'let' can not be redeclared and var create variables that can be reassigned another value
+// Answer: 
+
+//var: The older method of declaring JavaScript variables, allowing for redeclaration and updates at any point. Prone to hoisting, which might lead to unexpected behavior.
+//let: A more modern variable declaration with block scoping. It can be updated within its scope but cannot be redeclared. Requires declaration before use, and hoisting may cause a reference error if not declared first.
+//const: Similar to let but with the added restriction that the assigned value cannot be updated or re-declared after initialization. Also block-scoped and subject to hoisting.
 
 // TODO 1.4 Try out the different arithmetic operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators
@@ -51,7 +55,7 @@ console.log(z)
 console.log(u)
 
 // Checkpoint 1.2 What operators did you use?
-// Answer:I used the + and / operators
+// Answer: I used the + and / operators
 // Your code here
 
 // TODO 1.5 Try out the different string operators
@@ -64,21 +68,44 @@ let fullName = firstName +" "+ lastName
 
 console.log(fullName)
 
+let mundo = "world";
+let hi = `Hello ${mundo}`
+
+console.log(hi)
+
 // Checkpoint 1.3 What operators did you use?
-// Answer: 
+// Answer: string interpolation and string concatenation
 
 // TODO 1.6 Try out the different logical operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators
 // Your code here
 
+let result1 = true && false; 
+let result2 = true || false; 
+let result3 = !true; 
+let xorResult = (true || false) && !(true && false); 
+console.log(result1, result2, result3, xorResult)
+
 // Checkpoint 1.4 What operators did you use?
 // Answer: 
+
+//and, or, not and xor
 
 
 // TODO 1.7 Try out the different relational operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
 
+let resultOne = 5 == "5"; 
+let resultTwo = 5 === "5";
+let resultThree = 5 != "5";
+let resultFour = 10 > 5;
+let resultFive = 5 < 10;
+let resultSix = 10 >= 10;
+let resultSeven = 5 <= 10;
+console.log(resultOne, resultTwo, resultThree, resultFour, resultFive, resultSix, resultSeven)
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
 // Answer: 
+
+
 // Your code here
