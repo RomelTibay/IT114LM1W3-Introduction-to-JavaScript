@@ -37,7 +37,7 @@ if (toDisplay % 3 == 0) {
 if (toDisplay % 5 ==0){
     console.log("buzz")
 }
-if ()
+
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
 // Your code here
 console.log("toDisplay", toDisplay);
