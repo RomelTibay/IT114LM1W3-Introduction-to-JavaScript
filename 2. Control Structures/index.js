@@ -74,29 +74,59 @@ while (index < list.length) {
 // Checkpoint 2.3 What is the difference between do while and while loop?
 // Answer: 
 
+//The difference between while and do while loop is that in the while loop the condition is checked prior to executing any statements whereas in the case of do while loop, 
+//statements are run at least once, and then the condition is verified.
+
 // TODO 2.7 Use a for of loop to display all the values in the list
 // Your code here
+
+for (let element of list) {
+    console.log(element)
+}
 
 // TODO 2.8 Use a for in loop to display all the values in the list
 // Your code here
 
+for (let element in list) {
+    console.log(list[element])
+}
+
 // TODO 2.9 Use the for each method of the list to display all its values 
 // Your code here
+
+
+list.forEach(function(value) {
+  console.log(value)
+})
+
 
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 // Answer: 
 
+//Use for of when you want to iterate over the values of an iterable object, like an array.
+
+//Use for in when you want to iterate over the properties (keys) of an object.
+
+//Use forEach when you are working with arrays and want a concise way to execute a function for each element in the array.
+
 // TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
 // In the finally block, simulate cleaning up resources by displaying "cleaning up resources"
+
 const numerator = Math.floor((Math.random() * 100) + 1);
 const denominator = Math.floor((Math.random() * 5)); // feel free to mock this value for testing
 
-
-if(denominator === 0){
-    throw new Error("Division by zero error")
-} else {
-    console.log(numerator / denominator);
+try {
+    if (denominator === 0) {
+        throw new Error("Division by zero error");
+    } else {
+        console.log(numerator / denominator);
+    }
+} catch (error) {
+    console.error("Error:", error.message);
+} finally {
+    console.log("Cleaning up resources");
 }
+
 
 
 
